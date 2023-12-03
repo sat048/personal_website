@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="final_project/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <title>Bootstrap Test</title>
+</head>
+<body>
+
+  <!-- Bootstrap Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#main">Satyak Khare</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projectmain">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skillset">Skills</a>
+          </li>
+          <li class = "item"><a href="https://www.linkedin.com/in/satyak-khare-060767242/" target="_blank" rel="noopener noreferrer" alt="Linkedin"><i class="fa-brands fa-linkedin fa-2x"></a></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap Content -->
+  <div class="big">
+    
+  <div class="homepg">
+  <div class="container mt-4" id="main">
+    <img class = "pic" src = "profileimg.jpg" alt = "profile pic" width = "200" height = "200">
+    <h1>Satyak Khare</h1>
+    <p>Hello, I'm Satyak! Welcome to my personal website! I'm currently a student at the University of Michigan studying Computer Science and Statistics. Feel free to visit my Projects and <a href="about.html">About</a> page to learn more about me</p>
+    
+    <!-- <button type="button" class="btn btn-outline-success">Click me</button> -->
+  </div>
+  </div>
+
+  <!-- <style>
+    margin
+  </style> -->
+<div class="containerabt" id="aboutme">
+  <div class="row" >
+    
+  <div class = "col-md-6 text-block text-center">
+    <h1 class = "abth1">About Me</h1>
+    <p class = "abtp">I'm in my sophomore year at the University of Michigan and my passion is Computer Science.
+        My interests include software design and development, artificial intelligence, machine learning, cybersecurity, and financial technology. 
+        I am also pursuing a minor in Statistics. 
+    </p>
+  </div>
+  <div class="col-md-6">
+    <img src="final_project/bacgrdpic.jpg" alt="Description of the image" class="img-fluid" width="500" height="450">
+  </div>
+</div>
+</div>
+    <div id="projectmain">
+    <div class="projmarg bg-light" >
+    <div class="container mt-4" >
+      <h1 class = "prjh1">Projects</h1>
+
+        <p class = "prjp">Here are some of the projects I have worked on over the last year. Hover your mouse over them to learn more!</p>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="custom-box">
+            <div class="box-title">Parking Availability App</div>
+            <div class="hover-text">Designed an Android mobile app to display various parking 
+              space locations and produce availability updates.</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="custom-box">
+            <div class="box-title">Machine Learning</div>
+            <div class="hover-text">Designed a simplified NLP and ML program in C++ to automatically assign each post a topic on Piazza</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="custom-box">
+            <div class="box-title">Euchre</div>
+            <div class="hover-text">Developed a C++ driver program simulation 
+              of a full-text Euchre game</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="custom-box">
+            <div class="box-title">Office Hours Web API</div>
+            <div class="hover-text">C++ web page server with a REST API for managing an office hours queue given HTTP requests. 
+        
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="skills" id="skillset">
+<div class="container mt-5">
+  <h2 class="text-center">Skills</h2>
+  <p>Below are some of my skills that I'll add to very soon!</p>
+  <div class="row">
+    <!-- Skill 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="text-center">
+        <i class="fas fa-code fa-3x mb-3"></i>
+        <p>C++</p>
+      </div>
+    </div>
+
+    <!-- Skill 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="text-center">
+        <i class="fa-brands fa-java fa-3x mb-3"></i>
+        <p>Java</p>
+      </div>
+    </div>
+
+    <!-- Skill 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="text-center">
+        <i class="fa-brands fa-html5 fa-3x mb-3"></i>
+        <p>HTML/CSS</p>
+      </div>
+    </div>
+
+    <!-- Skill 4 -->
+    <div class="col-md-4 mb-4">
+      <div class="text-center">
+        <i class="fa-brands fa-js fa-3x mb-3"></i>
+        <p>JavaScript</p>
+      </div>
+    </div>
+
+    <!-- Skill 5 -->
+    <div class="col-md-4 mb-4">
+      <div class="text-center">
+        <i class="fa-brands fa-android fa-3x mb-3"></i>
+        <p>Kotlin</p>
+      </div>
+    </div>
+
+    <!-- Skill 6 -->
+    <div class="col-md-4 mb-4">
+      <div class="text-center">
+        <i class="fa-solid fa-laptop fa-3x mb-3"></i>
+        <p>Machine Learning</p>
+      </div>
+    </div>
+
+    <button id="toggleButton" class="btn btn-light">What's My Favorite Programming Language?</button>
+    <p id="additionalText" class="additional-text">My favorite programming language is C++!</p>
+
+  </div>
+  
+</div>
+
+</div>
+
+
+
+
+    <div class="container mt-4 bg-light">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="comments" class="form-label">Message:</label>
+          <textarea class="form-control" id="comments" name="comments" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+
+
+    
+
+
+
+
+    <div class="footer">
+<footer class="navbar navbar-expand-lg navbar-light bg-light">Copyright Satyak Khare 2023</footer>
+</div>
+
+
+
+
+</div>
+  <!-- Include Bootstrap JS Bundle -->
+  <script src="final_project/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JavaScript to toggle text visibility
+    document.getElementById('toggleButton').addEventListener('click', function() {
+      var additionalText = document.getElementById('additionalText');
+      additionalText.style.display = (additionalText.style.display === 'none') ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
