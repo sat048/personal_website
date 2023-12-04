@@ -56,7 +56,7 @@
       color: #0b0101;
       text-align: center;
       /* line-height: 150px; */
-      margin: 10px;
+      /* margin: 10px; */
       display: inline-block;
       width: 100%
     }
@@ -173,6 +173,35 @@
         transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
       }
 
+      .footer{
+        width:100%;
+        /* align-content:center; */
+      }
+
+      #contact-form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      textarea {
+        width: 100%;
+        height: 100px;
+      }
+
+      .iconic{
+        position: fixed;
+      top: 60px;
+      right: 10px;
+      z-index: 1000;
+      }
+
+      .scroll-buttons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+
+
 }
 
 @media screen and (min-width: 770px){
@@ -229,7 +258,7 @@ h1, p{
 }
 .containerabt{
     margin-top: 100px;
-    background-color: rgb(60, 171, 245);
+    background: linear-gradient(45deg, #7598c9, #0c9aed);
     display: flex;
       align-items: center;
       justify-content: center;
@@ -250,7 +279,7 @@ h1, p{
 }
 
 .skills{
-    background-color: rgb(60, 171, 245);
+    background: linear-gradient(45deg, #7598c9, #0c9aed);
     margin-top: 10px;
     display: flex;
       align-items: center;

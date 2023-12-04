@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./styles.css">
   <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <title>Bootstrap Test</title>
+  <title>Satyak Khare</title>
 </head>
 <body class="fullcode">
 
@@ -20,10 +20,9 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#main">Satyak Khare</a>
-
-      <!-- Navbar contents -->
+       <!-- Navbar contents -->
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="#homemain">Home</a>
           </li>
@@ -40,8 +39,6 @@
             <a class="nav-link" href="#contactme">Contact</a>
           </li>
         </li>
-        <li class = "item"><a href="https://www.linkedin.com/in/satyak-khare-060767242/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"> </a></i>
-        </li>
         </ul>
       </div>
 
@@ -57,10 +54,13 @@
     
   <div class="homepg" id="homemain">
   <div class="container mt-4" id="main">
-    <img class = "pic" src = "profileimg.jpg" alt = "profile pic" width = "200" height = "200">
-    <h1>Satyak Khare</h1>
-    <p>Hello, I'm Satyak! Welcome to my personal website! I'm currently a student at the University of Michigan studying Computer Science and Statistics. Feel free to visit my Projects and About page to learn more about me</p>
     
+    <img class = "pic" src = "profileimg.jpg" alt = "profile pic" width = "200" height = "200">
+    
+    <h1>Satyak Khare</h1>
+    
+    <p>Hello, I'm Satyak! Welcome to my personal website! I'm currently a student at the University of Michigan studying Computer Science and Statistics. Feel free to scroll through my website to learn more about me. You can contact me by emailing me at satyak.khare@gmail.com, connecting with me on LinkedIn, or by dropping a message on the contact form at the end of this page.</p>
+    <div class="iconic"><a href="https://www.linkedin.com/in/satyak-khare-060767242/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"> </a></i></div>
     <!-- <button type="button" class="btn btn-outline-success">Click me</button> -->
   </div>
   </div>
@@ -72,11 +72,13 @@
   <div class="row" >
     
   <div class = "col-md-6 text-block text-center">
-    <h1 class = "abth1">About Me</h1>
+    <h1 class = "abth1">About</h1>
     <p class = "abtp">I'm in my sophomore year at the University of Michigan and my passion is Computer Science.
         My interests include software design and development, artificial intelligence, machine learning, cybersecurity, and financial technology. 
-        I am also pursuing a minor in Statistics. 
+        I am also pursuing a minor in Statistics. I want to inspire people around the world using modern technologies.  
     </p>
+    <br>
+    <p class="abtp">On campus, I'm part of the Android Team on Michigan Hackers, Michigan Blockchain, and Zeta Pi Professional Technology Fraternity. My hobbies include traveling and watching sports. </p>
   </div>
   <div class="col-md-6">
     <img src="bacgrdpic.jpg" alt="Description of the image" class="img-fluid" width="500" height="450">
@@ -88,7 +90,7 @@
     <div class="container mt-4" >
       <h1 class = "prjh1">Projects</h1>
 
-        <p class = "prjp">Here are some of the projects I have worked on over the last year. Hover your mouse over them to learn more!</p>
+        <p class = "prjp">Here are some of the projects I have worked on over the last year. Hover over them to learn more!</p>
         <div>     
         <div class="row">
         <div class="col-md-3">
@@ -187,27 +189,23 @@
 
 </div>
 
-<button onclick="sendEmail()">Email Me</button>
 
 
 
     <div class="container mt-4 bg-light" id="contactme">
       <h2>Contact Me</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Name:</label>
-          <input type="text" class="form-control" id="name" name="name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email:</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="comments" class="form-label">Message:</label>
-          <textarea class="form-control" id="comments" name="comments" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+      <form id="contact-form">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    
+        <br>
+    
+        <button type="button" onclick="submitForm()">Submit</button>
       </form>
+    </div>
+
+    <div class="scroll-buttons">
+      <button class="btn btn-primary" onclick="scrollToTop('up')">Scroll To Top</button>
     </div>
 
 
@@ -218,7 +216,7 @@
 
 
     <div class="footer">
-<footer class="navbar navbar-expand-lg navbar-light bg-light">Copyright Satyak Khare 2023</footer>
+<footer class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">Copyright Satyak Khare 2023 || Created using HTML5/CSS, JavaScript, and Bootstrap</footer>
 </div>
 
 
@@ -228,8 +226,6 @@
   <!-- Include Bootstrap JS Bundle -->
   <script src="./dist/js/bootstrap.bundle.min.js"></script>
   <script src="./index.js"></script>
-  <script>
-    
-  </script>
+
 </body>
 </html>

@@ -4,23 +4,7 @@ document.getElementById('toggleButton').addEventListener('click', function() {
     additionalText.style.display = (additionalText.style.display === 'none') ? 'block' : 'none';
   });
 
-  //email button
-function sendEmail() {
-
-    var emailTo = 'satyak.khare@gmail.com';
-
-    // Subject and body of the email (you can customize these)
-    var subject = 'Subject of the email';
-    var body = 'Body of the email';
-
-    // Construct the mailto URL
-    var mailtoUrl = 'mailto:' + encodeURIComponent(emailTo) +
-                    '?subject=' + encodeURIComponent(subject) +
-                    '&body=' + encodeURIComponent(body);
-
-    // Open the user's default email client
-    window.location.href = mailtoUrl;
-}
+  
 
 //transition
 document.addEventListener('DOMContentLoaded', function() {
@@ -32,3 +16,24 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }, 2000); // Adjust the delay (in milliseconds) as needed
   });
+
+//contact
+function submitForm() {
+    // Replace 'your_email@example.com' with your actual email address
+    var emailTo = 'satyak.khare@gmail.com';
+
+    // Get the user's message from the textarea
+    var userMessage = document.getElementById('message').value;
+
+    // Create the mailto URL with subject and body
+    var mailtoUrl = 'mailto:' + encodeURIComponent(emailTo) +
+                    '?subject=' + encodeURIComponent('New Contact Form Submission') +
+                    '&body=' + encodeURIComponent(userMessage);
+
+    // Open the user's default email client
+    window.location.href = mailtoUrl;
+}
+
+function scrollToTop() {
+    document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
